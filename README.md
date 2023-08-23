@@ -27,13 +27,10 @@ A simple Python script to download image pools from e621.net.
 pip install requests
 ```
 
-3. Create a `config.json` file in the same directory as the script with the following structure:
+3. Change the usename and APIKey in the base64.b64encode line 
 
 ```json
-{
-  "Username": "YourE621Username",
-  "APIKey": "YourE621APIKey"
-}
+    "Authorization": "Basic " + base64.b64encode("username:APIKey".encode()).decode() #remeber to add username and APIKey to this line
 ```
 
 Replace `YourE621Username` and `YourE621APIKey` with your e621 username and API key respectively.
