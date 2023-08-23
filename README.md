@@ -33,7 +33,7 @@ pip install requests
     "Authorization": "Basic " + base64.b64encode("username:APIKey".encode()).decode() #remeber to add username and APIKey to this line
 ```
 
-Replace `YourE621Username` and `YourE621APIKey` with your e621 username and API key respectively.
+Replace `username` and `APIKey` with your e621 username and API key respectively.
 
 4. Create a `pools.txt` file in the same directory as the script. Each line in this file should contain a pool ID that you want to download.
 
